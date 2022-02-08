@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title> We Playing BasketBall</title>
+</head>
+<body>
+  <nav>
+    <div class="row">
+      <div class="col-12">
+        <form class="player" onsubmit="addPlayer(event)">
+          <div class="d-flex">
+            <input placeholder="Name" type="text" name="name" />
+            <button class="btn-special" type="submit">
+      </div>
+    </div>
+  </nav>
+  <section class="Team-one container-fluid">
+    <div class="row text-center">
+      <div class="col-6">
+        <div>
+          Team one:
+        </div>
+<div id="teamOneScore">0</div>
+      </div>
+      <div class="col-6">
+<div>Team 2:</div>
+<div id="teamTwoScore">0</div>
+      </div>
+    </div>
+    <div class="row text-center p-3">
+      <div class="col-6">
+        <button class="shoot2 btn btn-dark" onclick="shoot(2,34)">shoot 2pt</button>
+        <button class="shoot3 btn btn-dark" onclick="shoot(3,34)">Shoot 3pt</button>
+        <button class="reset btn btn-danger" onclick="reset('team1')">reset</button>
+      </div>
+      <div class="col-6">
+        <button class="teamTwoShoot btn btn-primary" onclick="shoot(2,'team2')">shoot 2pt</button>
+        <button class="teamTwoShoot3 btn btn btn-primary" onclick="shoot(3,'team2')">Shoot 3pt</button>
+        <button class="reset btn btn-danger" onclick="reset()">reset</button>
+      </div>
+    </div>
+  </section>
+</body>
+<script
+src="app.js"></script>
+</html>
